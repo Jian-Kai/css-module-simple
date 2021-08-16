@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+
+    .customBox1 {
+        background-color: white;
+        :global(.innerBox) {
+            background-color: black;
+            height: 100%;
+        }
+    }
+
+    .customBox2 {
+        :global(.innerBox) {
+            background-color: blue;
+            width: 100%;
+        }
+    }
+}

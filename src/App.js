@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './app.module.scss';
+import Box from './components/Box';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.app}>
+      <Box customClassName={style.customBox1} />
+      <Box customClassName={style.customBox2} />
     </div>
   );
 }
